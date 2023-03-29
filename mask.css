@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --first: #655DBB;
+    --second: #362FD9;
+    --third: #BFACE2;
+}
+.nav{
+    height: 8vh;
+    width: 100%;
+}
+.div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    width: 25%;
+    box-shadow: 2px 2px 14px #4643E7;
+    border-radius: 8px;
+}
+.nav div h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
+    color: var(--second);
+    /* text-shadow: 2px 2px 4px rgb(132, 220, 240); */
+}
+@keyframes glow {
+    20%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.2;
+    }
+
+    100%{
+        opacity: 0.9;
+    } 
+}
+
+.head{
+    margin-top: 15px;
+    height:100vh;
+    width: 100%;
+    color: var(--second);
+    background-color: whitesmoke;
+}
+
+.head h2{
+    color: var(--second);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.head h3{
+    color: var(--second);
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head .space{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 86%;
+    width: 100%;
+}
+
+.head .space .model{
+    /* border: 3px dotted var(--second); */
+    box-shadow: 2px 2px 14px #4643E7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    height: 85%;
+    width: 60%;
+}
+
+#canvas{
+    padding: 2px 2px 2px 2px;
+    height: 50vh;
+}
+
+.hr{
+    display: block; 
+    content: ""; 
+    height: 30px; 
+    margin-top: -31px; 
+    border-style: solid; 
+    border-color: var(--second);
+    border-width: 0px 1px 5px 1px; 
+    border-radius: 20px;
+}
+#but{
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+    color: black; 
+    border: 2px solid var(--second);
+    font-weight:600;
+}
+
+#but:hover{
+    transition: 0.5s;
+    background-color: var(--second);
+    color: white;
+}
+#foot{
+    color: antiquewhite;
+    background-color: var(--second);
+    height: 10vh;
+    width: 100%;
+}
+
+#foot p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 30%;
+}
+
+#foot .icon{
+    height: 70%;
+    width: 100%;
+    background-color: var(--second);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#foot .icon a{
+    width: 3%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70%;
+}
+
+
+/* #foot .icon a img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+} */
+@media screen and (max-width: 375px) {
+    #canvas{
+        padding: 2px 2px 2px 2px;
+        height: 24vh;
+    }
+    .head .space .model{
+        height: 62%;
+    }
+
+    .head h3{
+        font-size: smaller;
+    }
+
+    #foot .icon{
+        gap: 20px;
+    }
+    
+}
+
+@media screen and (min-width: 375px) {
+    #canvas{
+        padding: 2px 2px 2px 2px;
+        height: 24vh;
+    }
+    .head .space .model{
+        height: 62%;
+    }
+
+    .head h3{
+        font-size: smaller;
+    }
+
+    #foot .icon{
+        gap: 20px;
+    }
+}
